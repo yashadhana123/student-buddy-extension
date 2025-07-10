@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Buddy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="title animate-pop">📘 Student Buddy</h1>
+
+    <textarea id="question" placeholder="Enter your question here..." class="animated-input"></textarea>
+
+    <button id="solveBtn" class="animated-button">🔍 Solve</button>
+
+    <div id="loading" class="hidden spinner">⏳ Solving...</div>
+
+    <div id="resultContainer" class="fade-in">
+      <h3 style="color: white;">Answer & Explanation</h3>
+      <pre id="result"></pre>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

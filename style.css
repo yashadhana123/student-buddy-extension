@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #f0f4ff, #dbeafe);
+  color: #333;
+  width: 320px;
+  padding: 16px;
+  background-image: url(https://img.freepik.com/free-vector/wavy-background-concept_23-2148505385.jpg?w=740&t=st=1661746636~exp=1661747236~hmac=7e690eae03bfeb5a8021d207c269d47cf90c2ffb575766b125f79fb2650aa603);
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.title {
+  font-size: 22px;
+  text-align: center;
+  color: #2563eb;
+  margin-bottom: 10px;
+}
+
+textarea {
+  width: 100%;
+  height: 90px;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  resize: none;
+  transition: all 0.3s ease;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+  outline: none;
+}
+
+button {
+  padding: 10px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #1d4ed8;
+  transform: scale(1.05);
+}
+
+.spinner {
+  text-align: center;
+  font-size: 14px;
+  animation: pulse 1s infinite;
+}
+
+.hidden {
+  display: none;
+}
+
+#resultContainer {
+  margin-top: 10px;
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+  animation-delay: 0.3s;
+}
+
+#resultContainer h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+#result {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  white-space: pre-wrap;
+  max-height: 200px;
+  overflow-y: auto;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Animation Effects */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
+#question{
+  width: auto;
+}
